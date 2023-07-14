@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* keeps the box size intact  by rranging the content;*/
+
+
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+.head{
+    height: 100vh;
+    background:  url('C:/Users/hp/Desktop/travel/camprog.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* position:relative;--> will help give position to te .content class*/
+
+}
+.home1{
+    height: 100vh;
+   background: url('C:/Users/hp/Desktop/travel/collife.jpeg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* position:relative;--> will help give position to te .content class*/
+
+}
+.home2{
+    height: 100vh;
+   background: url('C:/Users/hp/Desktop/travel/camacad.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* position:relative;--> will help give position to te .content class*/
+
+}
+/*******/
+
+@media (max-width: 500px){
+    html{
+        font-size:50px;
+
+    }
+    .navbar{
+        width:100% ;
+        display:none ;
+        text-align: center;
+        
+
+    }
+    .navbar .navitems, .navbar .logo, .empcol{
+        
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+    .header-content .mdheading1{
+        display: none;
+    }
+    .mid, .middle {
+        float: none;
+        
+       
+        text-align: center;
+        
+    }
+    .afterm, .mafterm{
+        float: none;
+        text-align: center;
+        width: 100%;
+
+    }
+    .home{
+        display: block;
+        text-align: center;
+    }
+
+}
+
+
+
+.head .navbar a{
+    color: white;
+    
+
+}
+
+.head1 .navbar a{
+    color: white;
+    
+
+}
+
+ .container{
+    background-color: rgba(26, 88, 235, 0.8);
+
+   
+   
+    padding: 1rem;
+    display: inline-block;
+    width: 100%;
+ }
+
+ .head1 .container{
+    
+        background-color: rgb(26, 88, 235);
+    
+       
+       
+        padding: 1rem;
+        display: inline-block;
+        width: 100%;
+        animation-name: change-bg-col;
+        animation-duration: 1s;
+        animation-delay:0s;
+        animation-fill-mode: forwards;
+     
+ }
+ @keyframes change-bg-col{
+    from{
+        background-color: rgba(26, 88, 235, 0.6);
+
+    }
+    to{
+        background-color: rgb(26, 88, 235);
+
+    }
+ }
+ .navbar a:link,
+.navbar a:visited{
+    color:#f4f4f4;
+}
+.navbar a{
+    padding: 0.9rem;
+}
+
+.navbar a:hover{
+    
+    color: rgb(189, 189, 189); 
+    border-bottom: 1px solid rgb(189, 189, 189);
+     
+        
+}
+ .head .navitems{
+
+    float: left;
+    margin-top: 1rem;
+    opacity: 1;
+    
+ }
+ .head1 .navitems{
+
+    float: left;
+    margin-top: 1rem;
+    opacity: 1;
+    
+ }
+
+ ul{
+    list-style: none ;
+ }
+ 
+.navbar::after{/* element after navbar will be disoplayed in 2 blocks. clear:both makes it */
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.head .navitems{
+    display: inline-block ;
+}
+.head1 .navitems{
+    display: inline-block ;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+}
+h1, h2, h3{
+    
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+.empbar{
+    height: 3rem;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-top: 1rems;
+    padding-bottom: 1rem;
+    padding-left: 20px;
+    
+}
+
+.navbar .logo{
+    float: right;
+    color: #f4f4f4;
+    font-size: 10rem;
+    display: block;
+    opacity: 1;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+.mdheading1{
+    
+    margin-top: 50rem;
+    color: #f4f4f4;
+ }
+ .mdheading1 h1{
+     font-size: 2.5rem;
+     color: #f4f4f4;
+ }
+ .mdheading1 a{
+    background-color:rgba(1, 1, 70,0.8) ;
+    color: #f4f4f4;
+    font-size: 3rem;
+    border-radius: 3px;
+    margin-left: 15rem;
+    padding: 2rem;
+    float: right;
+    margin-right: 60rem;
+    margin-bottom: 20rem;
+ }
+ .mdheading1 a:hover{
+    background-color: rgba(26, 88, 235, 0.8);
+    
+ }
+
+ /*  home page content   */
+ 
+ 
+.empcol{
+    float:left;
+    background-color:rgba(189, 189, 189,0.5);
+    height:546px;
+    width: 200px;
+    transition-property: background;
+    transition-duration: 0.1s;
+    
+ }
+
+ .empcol:hover{
+    background-color:  rgba(189, 189, 189,0.8);
+ }
+ .empcol li{
+    font-size: 2.5rem;
+    color: rgb(1, 1, 70);
+    padding-bottom: 2rem;
+
+ }
+ .empcol a{
+    color: rgb(1, 1, 70);
+    font-size: 2.5rem;
+    color: rgb(1, 1, 70);
+    padding-bottom: 2rem;
+    text-decoration: underline;
+ }
+
+ .navbar h1{
+    width: 50%;
+    font-family: 'Inria', Serif;
+    color: #f4f4f4;
+    font-size: 6rem;
+    float: left;
+    text-align: center;
+    padding-bottom: 2rem;
+    opacity: 1;
+    
+ }
+ .md-heading{
+    margin-left: 58rem;
+    margin-top:40px;
+    color: #f4f4f4;
+ }
+ .md-heading h1{
+     font-size: 2.5rem;
+     color: #f4f4f4;
+ }
+ .md-heading a{
+    background-color:rgba(1, 1, 70,0.8) ;
+    color: #f4f4f4;
+    font-size: 3rem;
+    border-radius: 3px;
+    
+    padding: 2rem;
+ }
+ .md-heading a:hover{
+    background-color: rgba(26, 88, 235, 0.8);
+    
+ }
+
+ .home1 h3{
+    margin-left:25rem;
+    padding-top: 10rem;
+    padding-left: 25rem;
+    font-size: 3.5rem;
+    color: rgb(1, 1, 70);
+
+
+ }
+ .home1 p{
+    display: inline-block;
+    width: 650px;
+    height: 400px;
+    float: left;
+    font-size: 23px;
+    margin-left:20rem;
+    margin-top: 6rem;
+    padding: 30px;
+    background-color: rgba(69, 69, 69, 0.8);
+
+   
+ }
+ .home2{
+    margin: 0;
+
+ }
+ .home2 h3{
+    margin-top: 3rem;
+    margin-left:9rem;
+    padding-top: 5rem;
+    padding-left: 25rem;
+    font-size: 3.5rem;
+    color: #f4f4f4
+ }
+ .home2 p{
+    display: inline-block;
+    width: 650px;
+    height: 400px;
+    float: left;
+    font-size: 23px;
+    margin-left:14.5rem;
+    margin-top: 6rem;
+    padding: 30px;
+    background-color: rgba(69, 69, 69, 0.7);
+
+   
+ }
+ .home3{
+    margin: 0;
+
+ }
+ .home3 h3{
+    margin-top: 3rem;
+    margin-left:9rem;
+    padding-top: 5rem;
+    padding-left: 25rem;
+    font-size: 3.5rem;
+    color: #f4f4f4
+ }
+ .home3 p{
+    display: inline-block;
+    width: 650px;
+    height: 400px;
+    float: left;
+    font-size: 23px;
+    margin-left:14.5rem;
+    margin-top: 6rem;
+    padding: 30px;
+    background-color: rgba(69, 69, 69, 0.7);
+
+   
+ }
+ .WCU .head{
+    background-color: white;
+
+ }
+ .home1flt{
+    height: 700px;
+ }
+
+ .home1flt p{
+    background-color:rgb(77, 77, 77); 
+    font-size: 20px;
+    display: inline;
+    float: left;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 5rem;
+    width: 20rem;
+    height: 25rem;
+    padding-top: 1.6rem;
+ text-align: center;
+  
+
+ }
+
+
+ .feature{
+    padding: 0rem;
+    margin-right: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+
+    
+
+
+}
+.feature::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+   
+
+.ft {
+    width: 29%;
+    float: left;
+    padding: 2rem;
+   box-shadow: black;
+   margin-top: 2rem;
+}
+.lor{
+    display: inline-block;
+}
+    .lor p{
+       width: 70%;
+       text-align: center;
+       font-size: 2rem;
+       color: #333;
+       margin-left: 19rem;
+       margin-right: 15rem;
+       margin-top: 10rem;
+       float: left;
+
+       
+
+    }
+    .lor .empty2, .lor .empty3{
+        float: left;
+        height:100px;
+        width: 65.5px;
+        background-color: rgb(26, 88, 235);
+        margin: 0;
+        margin-right: 0;
+    }
+    
+
+
+.feature .adv{
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    margin-right: 30px;
+    
+   
+   
+}
+.mdheading{
+    font-size: 2rem;
+    text-align: center;
+    color: #f4f4f4;
+    padding-bottom: 1rem;
+}
+.feature .lp{
+    background-color: rgb(1, 1, 70);;
+    color: #f4f4f4;
+    text-align: center;
+    margin-right: 30px;
+    
+}
+.feature .exp{
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+}
+.fa-solid{
+    font-size: 2rem;
+}
+.fa-route,.fa-user-check{
+    color: #e63946;
+}
+.empty, .empty1{
+    float: left;
+    height:300px;
+    width: 65.5px;
+    background-color: rgb(26, 88, 235);
+    margin: 0;
+    margin-right: 0;
+}
+
+
+
+
+.foot{
+    
+    height: 13rem;
+    background-color: #333;
+    display: inline-block;
+    width:100%;
+    text-align: center;
+    font-size: 4rem;
+    color: #f4f4f4;
+    padding-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.fa-brands{
+    margin-bottom: 2.5rem;
+    color: rgb(26, 88, 235) ;
+
+}
+
+.foot a{
+    font-size: 4rem;
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+.foot a:hover{
+    color: rgb(0, 75, 132);
+}
+.middle {
+   border-left: 40px solid rgb(26, 88, 235) ;
+   border-right: 40px solid rgb(26, 88, 235) ;
+
+
+}
+.middle h1{
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+    color: grey;
+    
+    
+}
+.middle p{
+    
+    
+    display: inline-block;
+    float: left;
+    font-size: 3rem;
+    color: #f4f4f4;
+    background-color: rgba(69, 69, 69, 0.6);
+    margin-left: 10rem;
+  /*  text-align: center;*/
+
+
+}
+.middle p, .middle img{
+    transition-property: background;
+    transition-duration: 0.1s;
+}
+
+.middle p:hover, .middle img:hover{
+    background-color: rgba(0, 39, 132,0.8);
+}
+.afterm{
+    margin-top: 20rem;
+    width: 50%;
+    margin-left: 30rem;
+    margin-right: 10rem;
+  
+  
+    font-size: 2.5rem;
+margin-bottom:  7rem;
+
+}
+.after p{
+    margin-top: 50px;
+    margin-left: 40rem;
+}
+.mafterm{
+    background-color: rgb(1, 1, 70);
+    color: #f4f4f4;
+   
+    text-align: center;
+   height: 20rem;
+   width: 700px;
+   margin-left:40rem;
+   margin-right:20rem;
+   margin-bottom: 2rem;
+   
+   padding: 5rem;
+
+
+}
+.empbar2{
+    height: 3rem;
+    background-color: white;
+    font-size: 1.5rem;
+    padding-top: 1rems;
+    padding-bottom: 1rem;
+    padding-left: 20px;
+    
+}
+/*...*/
+.boxwrapper{
+    display: inline-block;
+    background-color:  #f4f4f4;
+   
+    
+}
+.two{
+    background-color:   #f4f4f4;
+   padding-top: 4rem;
+}
+
+.two p{
+    background-color:    #f4f4f4;
+padding-top: 5rem;
+    padding-top: 10rem;
+    text-align: center;
+    font-size: 3rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+}
+.two img{
+
+    width:35rem;
+    display: inline-block;
+    margin-right:  3rem;
+    float: left;
+   margin-top: 4rem;
+    
+}
+.box h3{
+     font-size: 2rem;
+     color: rgba(0, 39, 132,1);
+    
+}
+.box1{
+    
+    float: left;
+    margin-left:13rem;
+    margin-right:  6rem;
+
+}
+.box2{
+    float: left;
+    margin-right:  6rem;
+}
+.box3{
+    float: left;
+}
+    
+.box4{
+    float: left;
+    margin-left: 34rem;
+    margin-right: 6rem;
+}
+.box5{
+    float: left;
+}
+
+/*....*/
+.scam{
+    margin-top: 12rem;
+    width: 100%;
+    
+    display: inline-block;
+    background-color: rgb(26, 88, 235);
+    color: rgb(195, 195, 195) ;
+}
+.scam li{
+    list-style: none;
+    margin: 2rem;
+    font-size: 2rem;
+    margin-left: 20rem;
+    margin-top: 3rem;
+}
+.scam a{
+    font-size: 2rem;
+    color: rgb(195, 195, 195) ;
+}
+.scam a:hover{
+    color: rgb(195, 195, 195) ;
+    text-decoration: underline;
+}
+.scam1{
+    width: 33.33%;
+    float: left;
+    
+}
+.scam2{
+    width: 33.33%;
+    float: left;
+    
+}
+.scam3{
+    width: 33.33%;
+    float: left;
+    
+}
+
+/*......HELP............*/
+.contact{
+    background-color: #f4f4f4;
+    height: 600px;
+    display: inline-block;
+
+}
+.contact h1{
+   
+    font-size: 3.7rem;
+    color:  rgb(26, 88, 235);
+    
+    margin-bottom:0.5rem;
+    
+}
+.contact p{
+    font-size: 2rem;
+    margin-left:1rem;
+    margin-top: 2rem;
+    
+
+
+}
+.right{
+   margin-left: 20rem;
+    float: right;
+
+}
+.left{
+    margin-right: 5rem;
+    margin-left:4rem;
+    float: left;
+
+}
+.right form{
+    float: right;
+    display: block;
+    margin-left: 10rem;
+    padding-bottom: 90rem;
+}
